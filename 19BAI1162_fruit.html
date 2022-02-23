@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRUIT</title>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .bg-image {
+            /* The image used */
+            background-image: url("fruit_back.jpg");
+
+            /* Add the blur effect */
+            filter: blur(100px);
+            -webkit-filter: blur(8px);
+
+            /* Full height */
+            height: 150%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: initial;
+        }
+
+        .fnt {
+            font-size: 22px;
+            font-weight: 700;
+            font-family: 'Sofia';
+        }
+
+        .container {
+            position: absolute;
+            display: block;
+            margin: auto;
+            margin-top: 2%;
+            width: 100vw;
+            height: 90%;
+            top: 0%;
+            /* left: 10%; */
+        }
+
+        #image {
+            display: block;
+            margin-left: 39%;
+            margin-right: 35%;
+            margin-top: 30px;
+            width: 261px;
+            position: relative;
+            z-index: 10;
+            animation: rotation 1s 0s ease-in-out;
+
+
+        }
+
+        @keyframes rotation {
+            0% {
+                
+                left: 32px;
+                opacity: 1;
+            }
+
+            100% {
+                right: 56px;
+                
+                opacity: 0;
+            }
+        }
+
+        #exo {
+            color: rgb(68, 0, 0);
+            display: block;
+            text-align: center;
+            background-image: url("this.jpg");
+            /* width: 627px;
+            height: 304px; */
+            width: 80%;
+            height: 23%;
+            margin-left: 10%;
+            margin-bottom: 1px;
+            border: 5px solid rebeccapurple;
+            overflow: auto;
+            /* margin-top: 15%; */
+        }
+
+        #seed {
+            color: rgb(206, 193, 193);
+            position: absolute;
+            background-image: url("this.jpg");
+            padding-top: 2%;
+            top: 25%;
+            left: 65%;
+            display: block;
+            text-align: center;
+            width: 35%;
+            height: 40%;
+            margin-bottom: 20%;
+            /* margin-left: 890px; */
+            margin-right: 0px;
+            border: 5px solid rebeccapurple;
+            overflow: auto;
+            /* margin-top: 15%; */
+        }
+
+        #meso {
+            color: rgb(248, 248, 248);
+            position: absolute;
+            background-image: url("this.jpg");
+            top: 25%;
+            padding-top: 2%;
+            display: block;
+            text-align: center;
+            width: 35%;
+            height: 40%;
+            margin-bottom: 20%;
+            margin-left: 0%;
+            border: 5px solid rebeccapurple;
+            overflow: auto;
+            /* margin-top: 15%; */
+        }
+
+        #endo {
+            color: rgb(255, 255, 255);
+            background-image: url("this.jpg");
+            top: 72%;
+            padding-left: 2%;
+            display: block;
+            text-align: center;
+            width: 80%;
+            height: 28%;
+            border: 5px solid rebeccapurple;
+            overflow: auto;
+            margin-top: 2%;
+            padding: 0%;
+            margin-left: 10%;
+            /* margin-top: 15%; */
+
+        }
+
+        #r1 {
+            position: absolute;
+            top: 0%;
+            left: 1%;
+            color: white;
+            width: 10%;
+            height: 10%;
+            border: 2px dotted khaki;
+            padding-left: 1%;
+            padding-top: 1px;
+            transform: rotate(-45deg);
+            font-size: 2em;
+            color: rgb(255, 0, 200);
+            background-color: rgb(49, 97, 138);
+        }
+        iframe{
+            
+            top: 105%;
+            display: block;
+            margin-left: 30%;
+            position: absolute;
+            margin-right: auto;
+        }
+
+        footer {
+            display: block;
+            position: absolute;
+            /* background-image: url("text.jpg"); */
+            text-align: center;
+            left: 75%;
+            top: 92%;
+            font-size: 20px;
+            font: 900;
+            color: rgb(0, 0, 0);
+            font-family: 'Annie Use Your Telescope';
+            font: 1000;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-image"></div>
+
+    <div class="container">
+        <p id="r1" class="fnt"> FRUIT </p>
+
+        <div id="exo" class="fnt" style="color:rgb(250, 241, 241);">
+            <h1 style="color: rgb(115, 231, 19); padding: 0%;margin: 0%;"> EXOCARP</h1>
+            The exocarp is the outer most layer that forms the skin of the fruit. Each layer plays a different role in
+            either protection or dispersal.
+
+        </div>
+
+        <div id="image">
+            <img src="fruit.jpg" alt="">
+        </div>
+        <div id="seed" class="fnt">
+            <h1 style="color: rgb(12, 247, 3); padding: 0%;margin: 0%;"> seed</h1>
+            The seeds and fruits are the results of fertilization or sexual reproduction in plants.
+        </div>
+
+        <div id="meso" class="fnt">
+            <h1 style="color: rgb(53, 253, 13); padding: 0%;margin: 0%;"> MESOCARP</h1>
+            The mesocarp is the edible part of the fruit with a pulp rich in fatty acids, amino acids, and vitamins.
+        </div>
+
+        <div id="endo" class="fnt">
+            <h1></h1>
+            <h1 style="color: rgb(4, 236, 43); padding-left: 8%;margin: 0%;"> ENDOCARP</h1>
+            the inner layer of the pericarp of a fruit (such as an apple or orange) when it consists of two or more
+            layers of different texture or consistency.
+        </div>
+
+        <iframe width="40%" height="50%" src="https://www.youtube.com/embed/lIz1iw6oi-o" frameborder="0" allowfullscreen></iframe>
+
+    </div>
+    <footer id="foot">
+        <p style="color: white;background-color: rgb(36, 107, 240);">Made by -19BAI1162 AKASH SHINDE</p>
+    </footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>Plant </title>
+    <link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+
+    <style>
+        body {
+            background-image: url("index_back.jpg");
+            overflow: auto;
+            padding: 0%;
+            margin: 0%;
+
+
+
+
+        }
+
+        div p:first-child {
+            text-align: center;
+            font-size: 2em;
+            color: rgb(0, 0, 0);
+            font-family: grumpy;
+        }
+
+        #container {
+            padding: 0%;
+        }
+
+        #img1 {
+            display: block;
+            /* position: relative; */
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0%;
+            width: 500px;
+            height: 539px;
+            animation: rotation 2s 0s ease-in-out;
+            z-index: 0;
+
+            /* overflow-y: hidden; */
+
+
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(359deg);
+            }
+        }
+
+        #img1:hover {
+            width: 510px;
+            height: 541px;
+
+        }
+
+        @media screen and (max-width: 1163px) {
+
+            div p:first-child {
+                text-align: center;
+                font-size: 2em;
+                color: orangered;
+                font-family: Agency FB;
+            }
+
+            #img1 {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 0%;
+                width: 300px;
+                height: 400px;
+
+                /* overflow-y: hidden; */
+
+
+            }
+
+            #img1:hover {
+                margin-left: auto;
+                width: 400px;
+                height: 450px;
+            }
+        }
+
+        #info {
+            display: block;
+            position: absolute;
+            margin-top: 10%;
+            margin-left: 0%;
+            top: 0%;
+            margin-right: auto;
+            width: 30%;
+            height: 61%;
+            border: 5px solid rgb(214, 28, 28);
+            background-image: url("text.jpg");
+            text-align: center;
+            overflow: auto;
+            z-index: 100;
+        }
+
+        #info2 {
+            display: block;
+            position: absolute;
+            margin-top: 10%;
+            left: 70%;
+            top: 0%;
+            margin-right: auto;
+            /* width: 30%; */
+            height: 61%;
+            border: 5px solid rgb(214, 28, 28);
+            background-image: url("text.jpg");
+            text-align: center;
+            font-family: 'Akronim';
+            overflow: auto;
+            z-index: 100;
+
+        }
+        iframe{
+            position: absolute;
+            top: 100%;
+            display: block;
+            margin-left: 30%;
+            margin-right: auto;
+        }
+
+        footer {
+            display: block;
+            position: absolute;
+            /* background-image: url("text.jpg"); */
+            text-align: center;
+            left: 75%;
+            top: 90%;
+            font-size: 1.5em;
+            font: 900;
+            color: rgb(0, 0, 0);
+            font-family: 'Annie Use Your Telescope';
+            font: 1000;
+            ;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+        <p
+            style="background-color: whitesmoke; display: block;margin-left: auto;margin-right: auto;width: 70%;margin-bottom: 0px; ">
+            Plant Part details.Click parts to get details.
+            (video link is given below)
+            <aside id="info">
+                <p style="color: rgb(93, 0, 255);font-family: Allan;">
+                    Plants are predominantly photosynthetic eukaryotes of the kingdom Plantae. Historically, the plant
+                    kingdom encompassed all living things that were not animals, and included algae and fungi; however,
+                    all current definitions of Plantae exclude the fungi and some algae, as well as the prokaryotes (the
+                    archaea and bacteria).
+                </p>
+
+            </aside>
+
+            <aside id="info2">
+                <p style="color: rgb(93, 0, 255);font-family: Allan;">
+                    Most plants are multicellular organisms. Green plants obtain most of their energy from sunlight via
+                    photosynthesis by primary chloroplasts that are derived from endosymbiosis with cyanobacteria. Their
+                    chloroplasts contain chlorophylls a and b, which gives them their green color.
+                </p>
+
+            </aside>
+
+            <figure id="fig1"
+                style="width: 500px;margin-left: auto;margin-right: auto;position: relative;margin-top: 2%;">
+                <img id="img1" src="plant.jpg" title="Plant Anatomy" usemap="#akash">
+                <figcaption
+                    style="font-family: Agency fb;color: crimson; font-size: 3em; text-align: center;background-color: whitesmoke; display: block;margin-left: auto;margin-right: auto;width: 60%; margin-top: 15px;">
+                    Plant Anatomy</figcaption>
+                <map name="akash">
+
+                    <area shape="circle" coords="242,208,15" title="flower" href="19BAI1162_flower.html">
+                    <area shape="circle" coords="270,226,15" title="flower" href="19BAI1162_flower.html">
+                    <area shape="circle" coords="251,256,15" title="flower" href="19BAI1162_flower.html">
+
+                    <area shape="circle" coords="91,109,15" title="Fruit" href="19BAI1162_fruit.html">
+                    <area shape="circle" coords="240,120,15" title="Fruit" href="19BAI1162_fruit.html">
+                    <area shape="circle" coords="160,149,15" title="Fruit" href="19BAI1162_fruit.html">
+                    <area shape="circle" coords="313,141,15" title="Fruit" href="19BAI1162_fruit.html">
+                    <area shape="circle" coords="91,256,15" title="Fruit" href="19BAI1162_fruit.html">
+                    <area shape="rect" coords="66,19,374,177" title="Leaf" href="19BAI1162_leaf.html">
+                    <area shape="rect" coords="185,150,206,377" title="stem" href="19BAI1162_stem.html">
+                    <area shape="rect" coords="24,178,326,314" title="leaf" href="19BAI1162_leaf.html">
+                    <area shape="rect" coords="52,397,353,509" title="root" href="19BAI1162_root.html">
+
+                </map>
+
+            </figure>
+
+
+
+        </p>
+
+    </div>
+
+    <iframe width="40%" height="50%" src="https://www.youtube.com/embed/qULkjDccCeY" frameborder="0" allowfullscreen></iframe>
+    <figure>
+        <figcaption>Listen to the T-Rex:</figcaption>
+        <audio
+            controls
+            src="plant.mp3">
+                Your browser does not support the
+                <code>audio</code> element.
+        </audio>
+    </figure>
+
+    <footer id="foot">
+        <p style="color: white;background-color: rgb(36, 107, 240);">Made by -19BAI1162 AKASH SHINDE</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower</title>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(359deg);
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .bg-image {
+            /* The image used */
+            background-image: url("https://www.readersdigest.ca/wp-content/uploads/2016/05/what-different-flowers-mean-scaled.jpg");
+
+            /* Add the blur effect */
+            filter: blur(100px);
+            -webkit-filter: blur(1px);
+
+            /* Full height */
+            position: initial;
+            height: 150%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: auto;
+        }
+
+        .fnt {
+            font-size: 22px;
+            font-weight: 700;
+            font-family: 'Sofia';
+        }
+
+        .container {
+            position: absolute;
+            display: block;
+            margin: auto;
+            margin-top: 2%;
+            width: 100vw;
+            height: 90%;
+            top: 0%;
+            animation: rotation 1s 0s ease-in-out;
+            /* left: 10%; */
+        }
+
+        #image {
+            display: block;
+            margin-left: 40%;
+            margin-right: 35%;
+            margin-top: 30px;
+            width: 261px;
+            position: relative;
+            z-index: 10;
+            
+
+        }
+
+        #pi {
+            color: rgb(68, 0, 0);
+            display: block;
+            text-align: center;
+            background-image: url("this_leaf.jpg");
+            /* width: 627px;
+            height: 304px; */
+            width: 80%;
+            height: 23%;
+            margin-left:10%;
+            margin-bottom:1px;
+            border: 5px solid rebeccapurple;
+            overflow: auto;
+            /* margin-top: 15%; */
+        }
+        #pt {
+            color: rgb(206, 193, 193);
+            position: absolute;
+            top: 25%;
+            background-image: url("this_leaf.jpg");
+            left: 62%;
+            display: block;
+            text-align: center;
+            width: 38%;
+            height:40%;
+            margin-bottom: 20%;
+            /* margin-left: 890px; */
+            margin-right: 0px;
+            border: 5px solid rebeccapurple;
+            overflow: auto;
+            /* margin-top: 15%; */
+        }
+        #se {
+            color: rgb(0, 241, 72);
+            background-image: url("this_leaf.jpg");
+            position: absolute;
+            top: 25%;
+            display: block;
+            text-align: center;
+            width: 39%;
+            height:40%;
+            margin-bottom: 20%;
+            margin-left:0%;
+            border: 5px solid rebeccapurple;
+            overflow: auto;
+            /* margin-top: 15%; */
+        }
+        #st {
+            color: rgb(4, 196, 255);
+            background-image: url("this_leaf.jpg");
+            top: 72%;
+            display: block;
+            text-align: center;
+            width: 100%;
+            height:28%;
+            border: 5px solid rebeccapurple;
+            overflow: auto;
+            margin-top: 1%;
+            padding: 0%;
+            /* margin-top: 15%; */
+           
+        }
+        #r1{
+            position: absolute;
+            top: 0%;
+            left: 1%;
+            color: white;
+            width: 10%;
+            height: 10%;
+            border: 2px dotted khaki;
+            padding-left: 0%;
+            padding-top: 1px;
+            transform: rotate(-45deg);
+            font-size: 2em;
+            color: rgb(0, 0, 0);
+            background-color: aqua;
+            font-size: 1.4em;
+        }
+        iframe{
+            
+            top: 105%;
+            display: block;
+            margin-left: 30%;
+            position: absolute;
+            margin-right: auto;
+        }
+        footer {
+            display: block;
+            position: absolute;
+            /* background-image: url("text.jpg"); */
+            text-align: center;
+            left: 75%;
+            top: 94%;
+            font-size: 20px;
+            font: 900;
+            color: rgb(0, 0, 0);
+            font-family: 'Annie Use Your Telescope';
+            font: 1000;
+            ;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-image"></div>
+
+    <div class="container">
+        <p id="r1" class="fnt"> FLOWER  video 👇👇👇 </p>
+
+        <div id="pi" class="fnt" style="color:rgb(250, 241, 241);">
+            <h1 style="color: rgb(0, 210, 247); padding: 0%;margin: 0%;"> PISTIL</h1>
+            The pistil is the female reproductive structure of the flower. Pistil helps to receive pollen and in the fertilization process. The pistil is also involved in the process of germination of the pollen grains. 
+            
+        </div>
+
+        <div id="image" >
+            <img src="flower.jpg" alt="" width="319" height="280">
+        </div>
+        <div id="pt" class="fnt"> 
+            <h1 style="color: rgb(214, 19, 19); padding: 0%;margin: 0%;"> PETALS</h1>
+            Petals (collectively called the corolla) are also sterile floral parts that usually function as visually conspicuous elements serving to attract specific pollinators to the flower. The calyx and the corolla together are referred to as the perianth.
+        </div>
+
+        <div id="se" class="fnt">
+            <h1 style="color: rgb(180, 223, 25); padding: 0%;margin: 0%;"> SEPAL</h1>
+            Usually green, sepals typically function as protection for the flower in bud, and often as support for the petals when in bloom.
+        </div>
+
+        <div id="st" class="fnt">
+            <h1></h1>
+            <h1 style="color: rgb(247, 0, 205); padding: 0%;margin: 0%;"> STAMEN</h1>
+            Stamens are the male reproductive organs of flowering plants. They consist of an anther, the site of pollen development, and in most species a stalk-like filament, which transmits water and nutrients to the anther and positions it to aid pollen dispersal.
+        </div>
+
+
+        <iframe width="40%" height="50%" src="https://www.youtube.com/embed/UMfMtaxxkAI" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+
+    <footer id="foot">
+        <p style="color: white;background-color: rgb(36, 107, 240);">Made by -19BAI1162 AKASH SHINDE</p>
+    </footer>
+
+
+
+</body>
+
+</html>

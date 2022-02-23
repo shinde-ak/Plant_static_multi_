@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root</title>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .bg-image {
+            /* The image used */
+            background-image: url("root_back.jpg");
+
+            /* Add the blur effect */
+            filter: blur(100px);
+            -webkit-filter: blur(8px);
+
+            /* Full height */
+            height: 150%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: initial;
+        }
+
+        .fnt {
+            font-size: 22px;
+            font-weight: 700;
+            font-family: 'Sofia';
+        }
+
+        .container {
+            position: absolute;
+            display: block;
+            margin: auto;
+            margin-top: 2%;
+            width: 100vw;
+            height: 90%;
+            top: 0%;
+            /* left: 10%; */
+        }
+
+        #image {
+            display: block;
+            margin-left: 40%;
+            margin-right: 35%;
+            margin-top: 30px;
+            width: 261px;
+            position: relative;
+            z-index: 0;
+            animation: rotation 1s infinite ease-in-out;
+
+
+        }
+
+        @keyframes rotation {
+            0% {
+                transform: scale(1, 1);
+            }
+
+            50% {
+                transform: scale(1.3, 1.3);
+            }
+
+            100% {
+                transform: scale(1, 1);
+            }
+        }
+
+        #fib {
+            color: rgb(68, 0, 0);
+            display: block;
+            text-align: center;
+            background-image: url("this_leaf.jpg");
+            /* width: 627px;
+            height: 304px; */
+            width: 80%;
+            height: 23%;
+            margin-left: 10%;
+            margin-bottom: 1px;
+            border: 5px solid rebeccapurple;
+            overflow: auto;
+            /* margin-top: 15%; */
+        }
+
+        #tr {
+            color: rgb(206, 193, 193);
+            position: absolute;
+            top: 25%;
+            background-image: url("this_leaf.jpg");
+            left: 62%;
+            display: block;
+            text-align: center;
+            width: 38%;
+            height: 40%;
+            margin-bottom: 20%;
+            /* margin-left: 890px; */
+            margin-right: 0px;
+            border: 5px solid rebeccapurple;
+            overflow: auto;
+            /* margin-top: 15%; */
+        }
+
+        #tap {
+            color: rgb(0, 241, 72);
+            background-image: url("this_leaf.jpg");
+            position: absolute;
+            top: 25%;
+            display: block;
+            text-align: center;
+            width: 39%;
+            height: 40%;
+            margin-bottom: 20%;
+            margin-left: 0%;
+            border: 5px solid rebeccapurple;
+            overflow: auto;
+            /* margin-top: 15%; */
+        }
+
+        #sec {
+            color: rgb(4, 196, 255);
+            background-image: url("this_leaf.jpg");
+            top: 72%;
+            display: block;
+            text-align: center;
+            width: 100%;
+            height: 28%;
+            border: 5px solid rebeccapurple;
+            overflow: auto;
+            margin-top: 1%;
+            padding: 0%;
+            /* margin-top: 15%; */
+
+        }
+
+        #r1 {
+            position: absolute;
+            top: 0%;
+            left: 1%;
+            color: white;
+            width: 10%;
+            height: 10%;
+            border: 2px dotted khaki;
+            padding-left: 2%;
+            padding-top: 1px;
+            transform: rotate(-45deg);
+            font-size: 2em;
+            color: rgb(255, 0, 0);
+        }
+        iframe{
+            
+            top: 105%;
+            display: block;
+            margin-left: 30%;
+            position: absolute;
+            margin-right: auto;
+        }
+
+        footer {
+            display: block;
+            position: absolute;
+            /* background-image: url("text.jpg"); */
+            text-align: center;
+            left: 75%;
+            top: 94%;
+            font-size: 20px;
+            font: 900;
+            color: rgb(0, 0, 0);
+            font-family: 'Annie Use Your Telescope';
+            font: 1000;
+            ;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-image"></div>
+
+    <div class="container">
+        <p id="r1" class="fnt"> ROOT </p>
+
+        <div id="fib" class="fnt" style="color:rgb(250, 241, 241);">
+            <h1 style="color: rgb(0, 210, 247); padding: 0%;margin: 0%;"> FIBROUS ROOT</h1>
+            A fibrous root system is the opposite of a taproot system. It is usually formed by thin, moderately
+            branching roots growing from the stem.
+
+        </div>
+
+        <div id="image">
+            <img src="root.jpg" alt="" width="319" height="280">
+        </div>
+        <div id="tr" class="fnt">
+            <h1 style="color: rgb(214, 19, 19); padding: 0%;margin: 0%;"> TERTIARY ROOT</h1>
+            Tertiary roots are formed by secondary roots in turn. Such roots grow in different directions and help to
+            fix the plant securely in the soil.
+        </div>
+
+        <div id="tap" class="fnt">
+            <h1 style="color: rgb(180, 223, 25); padding: 0%;margin: 0%;"> TAPROOT</h1>
+            A tap root system has a single main root that grows down.Taproots are commonly found in plants like
+            beetroot, burdock, carrot, sugar beet, dandelion, parsley, parsnip, poppy mallow, radish, sagebrush, turnip,
+            common milkweed, cannabis.
+        </div>
+
+        <div id="sec" class="fnt">
+            <h1></h1>
+            <h1 style="color: rgb(247, 0, 205); padding: 0%;margin: 0%;"> LATERAL SEC. ROOT</h1>
+            Lateral roots arise endogenously from other roots and increase the absorptive surface of the plant.
+            Sometimes referred to as secondary roots, lateral roots ultimately mimic to a large extent, the structure of
+            the root from which they originate.
+        </div>
+
+        <iframe width="40%" height="50%" src="https://www.youtube.com/embed/K0_tAHBdXec" frameborder="0" allowfullscreen></iframe>
+
+    </div>
+    <footer id="foot">
+        <p style="color: white;background-color: rgb(36, 107, 240);">Made by -19BAI1162 AKASH SHINDE</p>
+    </footer>
+
+
+
+</body>
+
+</html>
